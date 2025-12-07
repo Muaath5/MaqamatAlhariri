@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<article class="maqama">
+    <div class="maqama-header">
+        <h2>{{ page.title }}</h2>
+        {% if page.number %}
+        <span class="maqama-number">المقامة {{ page.number }}</span>
+        {% endif %}
+    </div>
+
+    <div class="maqama-content">
+        {{ content }}
+    </div>
+
+    <nav class="maqama-navigation">
+        {% assign maqamat = site.maqamat | sort: 'number' %}
+        {% for maqama in maqamat %}
+            {% if maqama.url == page.url %}
+                {% assign current_index = forloop.index0 %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+        
+        <div class="nav-buttons">
+            {% if current_index > 0 %}
+                {% assign prev_maqama = maqamat[current_index | minus: 1] %}
+                <a href="{{ prev_maqama.url | relative_url }}" class="nav-btn prev">→ {{ prev_maqama.title }}</a>
+            {% endif %}
+            
+            <a href="{{ '/' | relative_url }}" class="nav-btn home">الصفحة الرئيسية</a>
+            
+            {% if current_index < maqamat.size | minus: 1 %}
+                {% assign next_maqama = maqamat[current_index | plus: 1] %}
+                <a href="{{ next_maqama.url | relative_url }}" class="nav-btn next">{{ next_maqama.title }} ←</a>
+            {% endif %}
+        </div>
+    </nav>
+</article>

@@ -1,0 +1,22 @@
+title: مقامات الحريري
+description: مجموعة مقامات الحريري
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Collections
+collections:
+  maqamat:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "maqamat"
+    values:
+      layout: "maqama"

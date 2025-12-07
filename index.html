@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="home-intro">
+    <h2>مقامات الحريري</h2>
+    <p>مجموعة من روائع الأدب العربي للإمام أبي محمد القاسم بن علي الحريري البصري</p>
+</div>
+
+<div class="maqamat-list">
+    {% assign maqamat = site.maqamat | sort: 'number' %}
+    {% for maqama in maqamat %}
+    <a href="{{ maqama.url | relative_url }}" class="maqama-card">
+        <span class="maqama-number">{{ maqama.number }}</span>
+        <h3>{{ maqama.title }}</h3>
+    </a>
+    {% endfor %}
+</div>

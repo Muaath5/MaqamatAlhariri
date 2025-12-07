@@ -1,0 +1,369 @@
+/* استيراد الخطوط العربية */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lateef:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+/* المتغيرات */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #8b4513;
+    --background: #fdfaf6;
+    --card-bg: #fff;
+    --text-color: #2c3e50;
+    --border-color: #d4af77;
+    --shadow: 0 2px 8px rgba(0,0,0,0.1);
+    --max-width: 900px;
+}
+
+/* الإعدادات الأساسية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amiri', serif;
+    background: var(--background);
+    color: var(--text-color);
+    line-height: 1.8;
+    font-size: 18px;
+    transition: font-family 0.3s ease;
+}
+
+/* خيارات الخطوط */
+body.font-amiri { font-family: 'Amiri', serif; }
+body.font-scheherazade { font-family: 'Scheherazade New', serif; }
+body.font-lateef { font-family: 'Lateef', serif; }
+body.font-cairo { font-family: 'Cairo', sans-serif; }
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: var(--card-bg);
+    border-bottom: 3px solid var(--border-color);
+    padding: 20px 0;
+    margin-bottom: 40px;
+    box-shadow: var(--shadow);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+}
+
+header h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.font-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.font-selector label {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.font-selector select {
+    padding: 8px 12px;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    background: var(--card-bg);
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* الصفحة الرئيسية */
+.home-intro {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 30px;
+    background: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.home-intro h2 {
+    font-size: 2.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.home-intro p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* قائمة المقامات */
+.maqamat-list {
+    display: grid;
+    gap: 20px;
+}
+
+.maqama-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    background: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+}
+
+.maqama-card:hover {
+    transform: translateX(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-color: var(--secondary-color);
+}
+
+.maqama-card .maqama-number {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary-color);
+    color: white;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.maqama-card h3 {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+/* صفحة المقامة */
+.maqama {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin-bottom: 40px;
+}
+
+.maqama-header {
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid var(--border-color);
+}
+
+.maqama-header h2 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.maqama-header .maqama-number {
+    display: inline-block;
+    padding: 8px 20px;
+    background: var(--secondary-color);
+    color: white;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+/* محتوى المقامة */
+.maqama-content {
+    font-size: 1.2rem;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+.maqama-content p {
+    margin-bottom: 1.5em;
+    text-align: justify;
+}
+
+/* تنسيق القصائد - الشطرين */
+.maqama-content .poem {
+    background: linear-gradient(to bottom, #f9f6f0 0%, #fdfaf6 100%);
+    padding: 30px;
+    margin: 30px 0;
+    border-right: 4px solid var(--border-color);
+    border-left: 4px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.maqama-content .verse {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    border-bottom: 1px dashed #d4af77;
+    align-items: center;
+}
+
+.maqama-content .verse:last-child {
+    border-bottom: none;
+}
+
+.maqama-content .verse .right-hemistich {
+    text-align: right;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.maqama-content .verse .left-hemistich {
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+/* التنقل */
+.maqama-navigation {
+    padding-top: 30px;
+    border-top: 3px solid var(--border-color);
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.nav-btn {
+    padding: 12px 25px;
+    background: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.nav-btn:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.nav-btn.home {
+    background: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+    border-top: 3px solid var(--border-color);
+    color: #666;
+}
+
+/* تصميم الجوال */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-intro h2 {
+        font-size: 1.8rem;
+    }
+
+    .maqama-card {
+        padding: 20px;
+    }
+
+    .maqama-card .maqama-number {
+        width: 50px;
+        height: 50px;
+        font-size: 1.1rem;
+    }
+
+    .maqama-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .maqama {
+        padding: 25px 20px;
+    }
+
+    .maqama-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .maqama-content {
+        font-size: 1.1rem;
+    }
+
+    /* القصائد على الجوال - شطر تحت شطر */
+    .maqama-content .verse {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .maqama-content .verse .right-hemistich,
+    .maqama-content .verse .left-hemistich {
+        text-align: center;
+        font-size: 1.15rem;
+    }
+
+    .maqama-content .poem {
+        padding: 20px 15px;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+    }
+
+    .nav-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    .maqama-content .verse .right-hemistich,
+    .maqama-content .verse .left-hemistich {
+        font-size: 1.05rem;
+    }
+}
