@@ -3,6 +3,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lateef:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+@import url('/assets/fonts/Aljalil.ttf');
+@import url('/assets/fonts/AljalilDotted.ttf');
+
+@font-face {
+    font-family: 'AlJalil';
+    src: url('/assets/fonts/Aljalil.ttf') format('truetype');
+    font-weight: 400 !important;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AlJalil Dotted';
+    src: url('/assets/fonts/AljalilDotted.ttf') format('truetype');
+    font-weight: 400 !important;
+    font-style: normal;
+}
 
 /* المتغيرات */
 :root {
@@ -32,11 +48,17 @@ body {
     transition: font-family 0.3s ease;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400 !important;
+}
+
 /* خيارات الخطوط */
-body.font-amiri { font-family: 'Amiri', serif; }
-body.font-scheherazade { font-family: 'Scheherazade New', serif; }
-body.font-lateef { font-family: 'Lateef', serif; }
-body.font-cairo { font-family: 'Cairo', sans-serif; }
+.font-amiri { font-family: 'Amiri', serif !important; }
+.font-scheherazade { font-family: 'Scheherazade New', serif !important; }
+.font-lateef { font-family: 'Lateef', serif !important; }
+.font-cairo { font-family: 'Cairo', sans-serif !important; }
+.font-aljalil { font-family: 'AlJalil', sans-serif !important; }
+.font-aljalil-dotted { font-family: 'AlJalil Dotted', sans-serif !important; }
 
 .container {
     max-width: var(--max-width);
@@ -77,7 +99,7 @@ header h1 a {
 }
 
 .font-selector label {
-    font-weight: bold;
+
     color: var(--text-color);
 }
 
@@ -149,7 +171,7 @@ header h1 a {
     color: white;
     border-radius: 50%;
     font-size: 1.3rem;
-    font-weight: bold;
+    
 }
 
 .maqama-card h3 {
@@ -227,14 +249,12 @@ header h1 a {
 .maqama-content .verse .right-hemistich {
     text-align: right;
     font-size: 1.3rem;
-    font-weight: bold;
     color: var(--secondary-color);
 }
 
 .maqama-content .verse .left-hemistich {
     text-align: left;
     font-size: 1.3rem;
-    font-weight: bold;
     color: var(--secondary-color);
 }
 
