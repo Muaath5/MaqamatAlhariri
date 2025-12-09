@@ -15,7 +15,7 @@ number: 5
 أكْرِمْ بهِ أصفَرَ راقَتْ صُفرَتُهْ
 </div>
 <div class="left-hemistich">
-جوّابَ آفاقٍ ترامَتْ سَفرَتُهْ
+جوَّابَ آفاقٍ ترامَتْ سَفرَتُهْ
 </div>
 </div>
 
@@ -24,11 +24,9 @@ number: 5
 مأثورَةٌ سُمعَتُهُ وشُهرَتُهْ
 </div>
 <div class="left-hemistich">
-قد أُودِعَتْ سِرَّ الغِنى أسرّتُهْ
+قد أُودِعَتْ سِرَّ الغِنى أَسِرَّتُهْ
 </div>
 </div>
-
-
 
 <div class="verse">
 <div class="right-hemistich">
@@ -39,7 +37,6 @@ number: 5
 </div>
 </div>
 
-
 <div class="verse">
 <div class="right-hemistich">
 كأنّما منَ القُلوبِ نُقْرَتُهْ
@@ -48,7 +45,6 @@ number: 5
 بهِ يصولُ مَنْ حوَتْهُ صُرّتُهْ
 </div>
 </div>
-
 
 <div class="verse">
 <div class="right-hemistich">
@@ -62,7 +58,7 @@ number: 5
 
 <div class="verse">
 <div class="right-hemistich">
-وحبّذا مَغْناتُهُ ونصْرَتُهْ
+وحبّذا مَغْناتُهُ ونُصْرَتُهْ
 </div>
 <div class="left-hemistich">
 كمْ آمِرٍ بهِ استَتَبّتْ إمرَتُهْ
@@ -72,10 +68,10 @@ number: 5
 
 <div class="verse">
 <div class="right-hemistich">
-ومُتْرَفٍ لوْلاهُ دمَتْ حسْرَتُهْ
+ومُتْرَفٍ لوْلاهُ دامَتْ حسْرَتُهْ
 </div>
 <div class="left-hemistich">
-وجيْشِ همٍّ هزمَتْهُ كرّتُهْ
+وجيْشِ همٍّ هزمَتْهُ كَرَّتُهْ
 </div>
 </div>
 
@@ -89,20 +85,18 @@ number: 5
 </div>
 </div>
 
-
 <div class="verse">
 <div class="right-hemistich">
-أسَرّ نجْواهُ فلانَتْ شِرّتُهْ
+أسَرَّ نجْواهُ فلانَتْ شِرَّتُهْ
 </div>
 <div class="left-hemistich">
-وكمْ أسيرٍ أسْلمَتْهُ أُسرَتُهْ
+وكمْ أسيرٍ أسْلمَتْهُ أُسْرَتُهْ
 </div>
 </div>
-
 
 <div class="verse">
 <div class="right-hemistich">
-أنقَذَهُ حتى صفَتْ مسرّتُهْ
+أنقَذَهُ حتى صفَتْ مَسَرَّتُهْ
 </div>
 <div class="left-hemistich">
 وحقِّ موْلًى أبدَعَتْهُ فِطْرَتُهْ
@@ -112,7 +106,7 @@ number: 5
 
 <div class="verse">
 <div class="right-hemistich">
-لوْلا التُقَى لقُلتُ جلّتْ قُدرتُهْ
+لوْلا التُّقَى لقُلتُ جلّتْ قُدرتُهْ
 </div>
 <div class="left-hemistich">
 </div>
@@ -138,7 +132,6 @@ number: 5
 </div>
 </div>
 
-
 <div class="verse">
 <div class="right-hemistich">
 يَبدو بوَصْفَينِ لعَينِ الرّامِقِ
@@ -153,7 +146,7 @@ number: 5
 وحُبّهُ عندَ ذَوي الحَقائِقِ
 </div>
 <div class="left-hemistich">
-يدْعو الى ارتِكابِ سُخْطِ الخالِقِ
+يدْعو إلى ارتِكابِ سُخْطِ الخالِقِ
 </div>
 </div>
 
@@ -163,7 +156,7 @@ number: 5
 لوْلاهُ لمْ تُقْطَعْ يَمينُ سارِقِ
 </div>
 <div class="left-hemistich">
-ولا بدَتْ مظْلِمَةٌ منْ فاسِقِ
+ولا بدَتْ مظْلُمَةٌ منْ فاسِقِ
 </div>
 </div>
 
@@ -187,13 +180,12 @@ number: 5
 </div>
 </div>
 
-
 <div class="verse">
 <div class="right-hemistich">
 أنْ ليسَ يُغْني عنْكَ في المَضايِقِ
 </div>
 <div class="left-hemistich">
-إلاّ إذا فرّ فِرارَ الآبِقِ
+إلاّ إذا فَرَّ فِرارَ الآبِقِ
 </div>
 </div>
 
