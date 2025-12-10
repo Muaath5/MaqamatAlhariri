@@ -402,12 +402,6 @@ footer {
         max-width: 280px;
         min-width: 180px;
     }
-    
-    /* تعطيل hover على الجوال */
-    .explain:hover .explain-popup {
-        opacity: 0;
-        visibility: hidden;
-    }
 }
 
 @media (max-width: 480px) {
