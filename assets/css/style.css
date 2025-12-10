@@ -302,6 +302,129 @@ footer {
     color: #666;
 }
 
+/* ===== شرح الكلمات والعبارات ===== */
+
+.explain {
+    position: relative;
+    display: inline;
+    color: var(--secondary-color);
+    border-bottom: 2px dotted var(--border-color);
+    cursor: help;
+    transition: all 0.3s ease;
+}
+
+.explain:hover {
+    color: var(--primary-color);
+    border-bottom-color: var(--secondary-color);
+}
+
+/* نافذة الشرح المنبثقة */
+.explain-popup {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(44, 62, 80, 0.95);
+    color: white;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    min-width: 200px;
+    max-width: 350px;
+    white-space: normal;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+/* السهم الصغير */
+.explain-popup::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 8px solid transparent;
+    border-top-color: rgba(44, 62, 80, 0.95);
+}
+
+/* إظهار الشرح عند hover على الكمبيوتر */
+.explain:hover .explain-popup {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* إظهار الشرح عند الضغط على الجوال */
+.explain.active .explain-popup {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* إذا كان النص قريباً من حافة الشاشة */
+.explain-popup.align-left {
+    left: 0;
+    transform: translateX(0);
+}
+
+.explain-popup.align-right {
+    left: auto;
+    right: 0;
+    transform: translateX(0);
+}
+
+.explain-popup.align-right::after {
+    left: auto;
+    right: 20px;
+    transform: translateX(0);
+}
+
+.explain-popup.align-left::after {
+    left: 20px;
+    transform: translateX(0);
+}
+
+/* تنسيق خاص للجوال */
+@media (max-width: 768px) {
+    .explain {
+        padding: 2px 4px;
+        border-bottom-width: 2px;
+    }
+    
+    .explain-popup {
+        font-size: 0.9rem;
+        padding: 10px 14px;
+        max-width: 280px;
+        min-width: 180px;
+    }
+    
+    /* تعطيل hover على الجوال */
+    .explain:hover .explain-popup {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    .explain-popup {
+        max-width: 90vw;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
+    
+    .explain-popup::after {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
+}
+
 /* تصميم الجوال */
 @media (max-width: 768px) {
     body {
