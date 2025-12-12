@@ -11,15 +11,7 @@ layout: default
         {{ content }}
     </div>
 
-    <nav class="maqama-navigation">
-        {% assign maqamat = site.maqamat | sort: 'number' %}
-        {% for maqama in maqamat %}
-            {% if maqama.url == page.url %}
-                {% assign current_index = forloop.index0 %}
-                {% break %}
-            {% endif %}
-        {% endfor %}
-        
+    <nav class="maqama-navigation">       
         <div class="nav-buttons">
             {% if page.previous %}
                 <a href="{{ page.previous.url | relative_url }}" class="nav-btn prev">→ {{ page.previous.title }}</a>

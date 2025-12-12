@@ -8,7 +8,7 @@ Each file will have Jekyll front matter
 import os
 import re
 
-def split_maqamat(input_file='book.txt', output_dir='maqamat'):
+def split_maqamat(input_file='book_good.md', output_dir='_maqamat'):
     """
     Split the book into separate maqama files.
     
