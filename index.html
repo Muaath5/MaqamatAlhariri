@@ -8,7 +8,7 @@ layout: default
 </div>
 
 <div class="maqamat-list">
-    {% assign maqamat = site.maqamat | sort: 'number' %}
+    {% assign maqamat = site.maqamat %}
     {% for maqama in maqamat %}
     <a href="{{ maqama.url | relative_url }}" class="maqama-card">
         <span class="maqama-number">{{ maqama.number }}</span>

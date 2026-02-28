@@ -52,6 +52,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400 !important;
 }
 
+w {
+    font-family: 'Amiri', serif;
+    color: red;
+    font-size: large;
+}
+
 /* خيارات الخطوط */
 .font-amiri { font-family: 'Amiri', serif !important; }
 .font-scheherazade { font-family: 'Scheherazade New', serif !important; }

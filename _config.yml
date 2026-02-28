@@ -13,6 +13,9 @@ collections:
     output: true
     permalink: /:collection/:name/
 
+# Toggle
+explain: false
+
 # Defaults
 defaults:
   - scope:
