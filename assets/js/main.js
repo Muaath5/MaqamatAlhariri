@@ -125,6 +125,7 @@ function toggleHarakat() {
     }
 }
 
+
 function removeHarakat(container) {
     const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, null, false);
     const textNodes = [];
