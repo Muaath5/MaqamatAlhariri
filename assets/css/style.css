@@ -299,6 +299,44 @@ header h1 a {
     background: var(--primary-color);
 }
 
+/* أزرار التبديل */
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.toggle-btn {
+    padding: 8px 22px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--card-bg);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+    border-color: var(--secondary-color);
+}
+
+.toggle-btn.active {
+    background: var(--secondary-color);
+    color: white;
+    border-color: var(--secondary-color);
+}
+
+/* الفاصل */
+.separator-dot {
+    color: red;
+    font-weight: bold;
+    font-size: 1.4em;
+    vertical-align: middle;
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -458,6 +496,15 @@ footer {
 
     .maqama-header h2 {
         font-size: 1.8rem;
+    }
+
+    .toggle-buttons {
+        flex-wrap: wrap;
+    }
+
+    .toggle-btn {
+        font-size: 0.9rem;
+        padding: 6px 16px;
     }
 
     .maqama-content {
