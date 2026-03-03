@@ -14,7 +14,7 @@ collections:
     permalink: /:collection/:name/
 
 # Toggle
-explain: false
+explain: true
 
 # Defaults
 defaults:
